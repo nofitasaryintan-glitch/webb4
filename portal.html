@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Portofolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="home-text">
+            <h1>Hi!, I am <span>Intan Novita </span></h1>
+            <p>Front End Developer | Information System Student</p>
+        </div>
+
+        <div class="home-img">
+            <img src="profil.jpg" alt="Foto Profil">
+        </div>
+    </section>
+
+    <!-- PROFIL -->
+<section id="profil" class="profile">
+    <div class="profile-card">
+        <img src="profil.jpg" alt="Foto Profil">
+
+        <h2>Intan Novita Sari</h2>
+        <p class="role">Mahasiswa Sistem Informasi</p>
+
+        <p class="desc">
+            NIM: <strong>251011701266</strong><br>
+            Program Studi: <strong>Sistem Informasi</strong><br>
+            Alamat: <strong>Buaran Serpong</strong>
+        </p>
+
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </div>
+</section>
+
+    <!-- MEDIA -->
+<section id="media" class="media-section">
+    <h2 class="section-title">Media</h2>
+
+    <!-- GALERI -->
+    <div class="media-box">
+        <h3>📷 Galeri Foto</h3>
+        <div class="media-gallery">
+            <img src="1.jpg" alt="Foto 1">
+            <img src="2.jpg" alt="Foto 2">
+            <img src="3.jpg" alt="Foto 3">
+        </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="media-box">
+        <h3>🎥 Video</h3>
+        <div class="media-video">
+            <video controls>
+                <source src="vidio.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+       <!-- PROJECT -->
+    <section id="project" class="project-section scroll">
+    <h2 class="section-title">Project</h2>
+
+    <div class="project-container">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <img src="project11.png" alt="Project 1">
+            <img src="project22.jpg" alt="Project 1">
+
+            <div class="project-info">
+                <h3>Website Portofolio</h3>
+                <p>Website portofolio pribadi menggunakan HTML, CSS, dan JavaScript.</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <img src="project33.png" alt="Project 2">
+            <img src="project34.png" alt="Project 2">
+
+            <div class="project-info">
+                <h3>Aplikasi Data Mahasiswa</h3>
+                <p>Aplikasi CRUD sederhana untuk mengelola data mahasiswa.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- KONTAK -->
+    <section id="kontak" class="contact-section scroll">
+    <h2 class="section-title">Hubungi Saya</h2>
+
+    <div class="contact-form-only">
+        <form>
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Tulis pesan Anda..." required></textarea>
+            <button type="button" onclick="kirimPesan()">Kirim Pesan</button>
+        </form>
+    </div>
+</section>
+
+    <script>
+        function kirimPesan() {
+            alert("Pesan berhasil dikirim!");
+        }
+    </script>
+
+</body>
+</html>
